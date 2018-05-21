@@ -1,2 +1,2 @@
 # warwick
-An usefull League of Legends API client
+An useful League of Legends API client
