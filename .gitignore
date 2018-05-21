@@ -64,5 +64,6 @@ typings/
 # next.js build output
 .next
 
-# Package 
+# Spesific needed 
 package-lock.json
+dist
