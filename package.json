@@ -5,13 +5,17 @@
   "main": "index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prebublish":"npm run build",
+    "prebublish": "npm run build",
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "request-promise": "^4.2.2",
     "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "@types/request-promise": "^4.1.41"
   }
 }
