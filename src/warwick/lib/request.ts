@@ -12,7 +12,7 @@ export class Request {
         })
     }
     
-    get(endpoint: string): Promise<any> {
+    protected get(endpoint: string): Promise<any> {
         return this._request.get(endpoint);
     }
 }

@@ -5,17 +5,20 @@
   "main": "index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prebublish": "npm run build",
+    "prepublish": "npm run build",
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "request": "^2.87.0",
     "request-promise": "^4.2.2",
+    "sprintf-js": "^1.1.1",
     "typescript": "^2.8.3"
   },
   "devDependencies": {
-    "@types/request-promise": "^4.1.41"
+    "@types/request-promise": "^4.1.41",
+    "@types/sprintf-js": "^1.1.0"
   }
 }
