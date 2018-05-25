@@ -1,1 +1,1 @@
-export {Warwick} from "./warwick/warwick"; 
+export {Warwick} from "./warwick/warwick";
