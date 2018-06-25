@@ -7,6 +7,5 @@ describe('should initialize an instance from given config', () => {
     it('initiate an instance with given config', (assert) => {
         const ww = new Warwick(config);
         expect(ww).to.be.an('object');
-        
     })
 })
