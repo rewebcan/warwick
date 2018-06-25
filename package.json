@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
-    "prepublish": "npm run build",
+    "prepublish": "rm -rf dist && npm run build && rm -rf ./src",
     "build": "tsc"
   },
   "keywords": [],
