@@ -1,9 +1,14 @@
 {
-  "name": "warwick-lol-client",
-  "version": "1.0.0",
+  "name": "warwick",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://github.com/rewebcan/warwick",
+  "bugs": {
+    "url": "https://github.com/rewebcan/warwick/issues",
+    "email": "rewebcan@gmail.com"
+  },
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
     "prepublish": "npm run build",
