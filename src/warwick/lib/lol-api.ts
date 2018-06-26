@@ -30,6 +30,9 @@ export class LolApi {
     get accountId() {
         return this._accountId;
     }
+    get summonerId() {
+        return this._accountId;
+    }
     /**
      * 
      * @param regionKey 
@@ -69,7 +72,8 @@ export class LolApi {
      * @param accountId (optional)
      */
     public matches(accountId?: number): Promise<any> {
-        const url = sprintf(Urls.MATCH, this.baseUrl, this.version, accountId ? accountId : this.accountId);
+        const _accountId = accountId || this.accountId;
+        const url = sprintf(Urls.MATCH, this.baseUrl, this.version, _accountId);
         return this._request.get(url);
     }
 
@@ -104,8 +108,9 @@ export class LolApi {
      * @description Summoner info.
      * @param accountId 
      */
-    public getSummonerByAccountId(accountId: number) {
-        const url = sprintf(Urls.SUMMONER_BY_ACCOUT_ID, this.baseUrl, this.version, accountId);
+    public getSummonerByAccountId(accountId?: number) {
+        const _accountId = accountId || this.accountId;
+        const url = sprintf(Urls.SUMMONER_BY_ACCOUT_ID, this.baseUrl, this.version, _accountId);
         return this._request.get(url);
     }
 
@@ -142,8 +147,9 @@ export class LolApi {
      * @param summonerId
      * @param championId
      */
-    public championMasteryByChampion(summonerId: number, championId: number) {
-        const url = sprintf(Urls.CHAMPION_MASTERY_BY_CHAMPION, this.baseUrl, this.version, summonerId, championId);
+    public championMasteryByChampion(summonerId?: number, championId?: number) {
+        const _summonerId = summonerId || this.summonerId;
+        const url = sprintf(Urls.CHAMPION_MASTERY_BY_CHAMPION, this.baseUrl, this.version, _summonerId, championId);
         return this._request.get(url);
     }
 
@@ -152,8 +158,9 @@ export class LolApi {
      * Get a player's total champion mastery score, which is the sum of individual champion mastery levels.
      * @param summonerId 
      */
-    public championScores(summonerId: number) {
-        const url = sprintf(Urls.CHAMPION_SCORES, this.baseUrl, this.version, summonerId);
+    public championScores(summonerId?: number) {
+        const _summonerId = summonerId || this.summonerId;
+        const url = sprintf(Urls.CHAMPION_SCORES, this.baseUrl, this.version, _summonerId);
         return this._request.get(url);
     }
 }
