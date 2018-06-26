@@ -1,9 +1,9 @@
 {
   "name": "warwick",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "homepage": "https://github.com/rewebcan/warwick",
   "bugs": {
     "url": "https://github.com/rewebcan/warwick/issues",
@@ -11,8 +11,8 @@
   },
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
-    "prepublish": "rm -rf dist && npm run build && rm -rf ./src",
-    "build": "tsc"
+    "prepublish": "rm -rf dist && npm run build",
+    "build": "tsc --declaration"
   },
   "keywords": [],
   "author": "",
