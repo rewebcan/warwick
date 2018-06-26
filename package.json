@@ -11,7 +11,6 @@
   },
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
-    "prepublish": "rm -rf dist && npm run build",
     "prepare": "rm -rf dist && npm run build",
     "build": "tsc --declaration"
   },
