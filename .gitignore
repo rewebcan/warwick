@@ -8,6 +8,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
 # Runtime data
 pids
 *.pid
@@ -57,7 +58,6 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
-
 # dotenv environment variables file
 .env
 
@@ -67,3 +67,4 @@ typings/
 # Spesific needed 
 package-lock.json
 dist
+yarn.lock
