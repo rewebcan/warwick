@@ -73,7 +73,7 @@ export class LolApi {
      */
     public matches(accountId?: number): Promise<any> {
         const _accountId = accountId || this.accountId;
-        const url = sprintf(Urls.MATCH, this.baseUrl, this.version, _accountId);
+        const url = sprintf(Urls.MATCHES, this.baseUrl, this.version, _accountId);
         return this._request.get(url);
     }
 
@@ -83,7 +83,7 @@ export class LolApi {
      * @param filter 
      */
     public matchesFiltered(filter: MatchFilter): Promise<any> {
-        const url = sprintf(Urls.MATCH, this.baseUrl, this.version, this.accountId);
+        const url = sprintf(Urls.MATCHES, this.baseUrl, this.version, this.accountId);
         return this._request.get({ url: url, qs: filter });
     }
 
