@@ -128,7 +128,7 @@ export class LolApi {
      * @description Positions of a summoner on any league.
      * @param summonerName 
      */
-    public summonerPositions(summonerId: string) {
+    public summonerPositions(summonerId: number) {
         const url = sprintf(Urls.POSITIONS, this.baseUrl, this.version, summonerId);
         return this._request.get(url);
     }
