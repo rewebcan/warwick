@@ -119,7 +119,7 @@ export class LolApi {
      * @param name 
      */
     public getSummonerByName(name: string) {
-        name = decodeURIComponent(name);
+        name = encodeURIComponent(name);
         const url = sprintf(Urls.SUMMONER_BY_NAME, this.baseUrl, this.version, name);
         return this._request.get(url);
     }
