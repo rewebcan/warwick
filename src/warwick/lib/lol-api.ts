@@ -7,7 +7,7 @@ export class LolApi {
     private _config: Config;
     private _regionKey: string = 'tr1';
     private _summonerName: string;
-    private _version = 'v3';
+    private _version = 'v4';
     private _summonerId: number = 0;
     private _summonerNick: string = '';
     private _accountId: number = 0;
