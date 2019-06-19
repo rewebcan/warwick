@@ -5,7 +5,7 @@ export enum Urls {
     SUMMONER_BY_ACCOUT_ID = '%s/summoner/%s/summoners/by-account/%s',
     SUMMONER_BY_NAME = '%s/summoner/%s/summoners/by-name/%s',
     SUMMONER_BY_SUMMONER_ID = '%s/summoner/%s/summoners/%s',
-    POSITIONS = '%s/league/%s/positions/by-summoner/%s',
+    POSITIONS = '%s/league/%s/entries/by-summoner/%s',
     CHAMPION_MASTERY = '%s/champion-mastery/%s/champion-masteries/by-summoner/%s',
     CHAMPION_MASTERY_BY_CHAMPION = '%s/champion-mastery/%s/champion-masteries/by-summoner/%s/by-champion/%s',
     CHAMPION_SCORES = '%s/champion-mastery/%s/scores/by-summoner/%s',
