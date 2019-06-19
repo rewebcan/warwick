@@ -1,6 +1,6 @@
 {
   "name": "warwick-lol",
-  "version": "1.0.13",
+  "version": "1.0.12",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
